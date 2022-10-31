@@ -8,15 +8,15 @@ package com.moodAnalyzer.java;
 //Mood Analyzer Class
 public class MoodAnalyzer {
 
-	// Function to Check Mood of a String Entered
-	public String moodCheck(String message) {
-
-		if (message.contains("SAD")) {
-			System.out.println("In SAD Mood");
-			return "SAD";
-		} else {
-			System.out.println("In HAPPY Mood");
-			return "HAPPY";
-		}
+	 //Function to Check Mood of a String Entered
+    public String moodCheck(String message){
+        if(message.contains("Sad")) {
+            System.out.println("In SAD Mood");
+            return "SAD";
+        }
+        else{
+            System.out.println("In HAPPY Mood");
+            return "HAPPY";
+        }
 	}
 }
