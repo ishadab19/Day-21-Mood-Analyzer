@@ -9,7 +9,8 @@ package com.moodAnalyzer.java;
 //Mood Analyzer Class
 public class MoodAnalyzer {
 	String message;
-	 //Constructor created to pass message as mentioned in UC.
+
+	// Constructor created to pass message as mentioned in UC.
 	public MoodAnalyzer(String message) {
 		this.message = message;
 	}
@@ -18,9 +19,12 @@ public class MoodAnalyzer {
 	public String moodCheck() {
 		// Created Try and Catch Blocks to Handle Exceptions if Occurs.
 		try {
-			if (message.contains("Sad")) {
+			if (message.contains("sad")) {
 				System.out.println("In SAD Mood");
 				return "SAD";
+			} else if (message.contains("NULL")) {
+				return "HAPPY";
+
 			} else {
 				System.out.println("In HAPPY Mood");
 				return "HAPPY";
@@ -29,7 +33,7 @@ public class MoodAnalyzer {
 		// Don't Know what would be exception, So Took a Normal Exception to Catch,
 		// Whatever Exception Occurs.
 		catch (Exception exception) {
-			return "HaPPY";
+			return "HAPPY";
 		}
 	}
 }
