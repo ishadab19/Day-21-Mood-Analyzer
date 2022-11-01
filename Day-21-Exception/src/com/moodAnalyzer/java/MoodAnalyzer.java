@@ -7,9 +7,14 @@ package com.moodAnalyzer.java;
  */
 //Mood Analyzer Class
 public class MoodAnalyzer {
+	String message;
+	
+	public MoodAnalyzer(String message) {
+		this.message = message;
+	}
 
 	 //Function to Check Mood of a String Entered
-    public String moodCheck(String message){
+    public String moodCheck(){
         if(message.contains("Sad")) {
             System.out.println("In SAD Mood");
             return "SAD";
